@@ -10,6 +10,7 @@ import {
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import WeightChips from "./WeightChips";
 
 export default function Home() {
   const [weight, setWeight] = useState("");
@@ -101,26 +102,74 @@ export default function Home() {
 
   return (
     <div>
+      <Header></Header>
       <div className="top-ad-code"></div>
 
+      <div className="mt-16 min-h-screen bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center px-4">
+        <div className="mt-3 max-w-3xl bg-white rounded-2xl shadow-lg p-8 text-gray-800">
+          <h1 className="text-3xl font-bold text-center text-blue-600 mb-4">
+            Welcome to KS BMI App – Your Personalized Health Companion 💪
+          </h1>
+
+          <p className="text-lg mb-6 text-center">
+            Take control of your health with our smart and easy-to-use Body Mass
+            Index (BMI) calculator. Whether you're on a fitness journey,
+            tracking your wellness goals, or just curious about your health
+            status — our app provides instant BMI insights based on your height
+            and weight.
+          </p>
+
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold text-purple-600">
+              ✨ Why Use KS BMI App?
+            </h2>
+            <ul className="list-disc pl-6 text-base">
+              <li>✅ Quick & Accurate BMI calculation</li>
+              <li>✅ Clean & User-Friendly Interface</li>
+              <li>✅ Tailored for All Age Groups</li>
+              <li>✅ Free to Use, Anytime Anywhere</li>
+              <li>✅ No Signup Required</li>
+            </ul>
+          </div>
+
+          <div className="mt-6 space-y-4">
+            <h2 className="text-2xl font-semibold text-purple-600">
+              🚀 How It Works:
+            </h2>
+            <ol className="list-decimal pl-6 text-base">
+              <li>
+                Enter your <strong>weight</strong> in kilograms.
+              </li>
+              <li>
+                Add your <strong>height</strong> in feet and inches.
+              </li>
+              <li>
+                Click <strong>Calculate</strong> to get your BMI and see which
+                category you fall into:
+                <ul className="list-disc pl-6 mt-2">
+                  <li>Underweight</li>
+                  <li>Normal</li>
+                  <li>Overweight</li>
+                  <li>Obese</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <div className="mt-6 p-4 bg-blue-100 border-l-4 border-blue-500 text-blue-700 rounded-md">
+            💡 <strong>Tip:</strong> Knowing your BMI can be your first step
+            toward a healthier life. Make informed choices, every day.
+          </div>
+        </div>
+      </div>
+
       <div
-        className={`min-h-screen flex items-center justify-center p-4 transition-all duration-300 ${"bg-gradient-to-br from-indigo-500 to-blue-400 text-white"}`}
+        className={`pt-4 pb-4 flex  justify-center  transition-all duration-300 ${"bg-gradient-to-r from-blue-400 to-purple-500 text-white"}`}
       >
         <div className="relative w-full max-w-md">
-          {/* dark mode code */}
-          {/* <div className="flex justify-end mb-4">
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="flex items-center gap-2 text-sm px-3 py-2 bg-white/20 hover:bg-white/30 rounded-full backdrop-blur-md"
-            >
-              {darkMode ? <FaSun /> : <FaMoon />}{" "}
-              {darkMode ? "Light Mode" : "Dark Mode"}
-            </button>
-          </div> */}
-
           <div className="bg-white/20 backdrop-blur-lg rounded-2xl shadow-2xl p-8 relative z-10">
             <div className="mb-4">
-              <label className="block text-sm mb-1">Weight (kg)</label>
+              <label className="block text-sm mb-1 font-bold">Weight (kg)</label>
               <input
                 type="number"
                 value={weight}
@@ -131,7 +180,7 @@ export default function Home() {
             </div>
 
             <div className="mb-6">
-              <label className="block text-sm mb-1">Height</label>
+              <label className="block text-sm mb-1 font-bold">Height</label>
               <div className="flex gap-2">
                 <input
                   type="number"
@@ -218,6 +267,9 @@ export default function Home() {
       </div>
 
       <div className="bottom-ad-code"></div>
+
+      <WeightChips></WeightChips>
+      <Footer></Footer>
     </div>
   );
 }
