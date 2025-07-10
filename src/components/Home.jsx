@@ -7,6 +7,8 @@ import {
   FaSun,
   FaMoon,
 } from "react-icons/fa";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Home() {
   const [weight, setWeight] = useState("");
@@ -14,7 +16,7 @@ export default function Home() {
   const [heightIn, setHeightIn] = useState("");
   const [bmi, setBmi] = useState(null);
   const [status, setStatus] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
+  //const [darkMode, setDarkMode] = useState(false);
 
   const calculateBMI = () => {
     if (!weight || !heightFt || heightIn === "") {
@@ -99,16 +101,13 @@ export default function Home() {
   return (
     <div>
       <div className="top-ad-code"></div>
+      <Header></Header>
       <div
-        className={`min-h-screen flex items-center justify-center p-4 transition-all duration-300 ${
-          darkMode
-            ? "bg-gradient-to-br from-gray-900 to-gray-800 text-white"
-            : "bg-gradient-to-br from-indigo-500 to-blue-400 text-white"
-        }`}
+        className={`min-h-screen flex items-center justify-center p-4 transition-all duration-300 ${"bg-gradient-to-br from-indigo-500 to-blue-400 text-white"}`}
       >
         <div className="relative w-full max-w-md">
           {/* dark mode code */}
-          <div className="flex justify-end mb-4">
+          {/* <div className="flex justify-end mb-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="flex items-center gap-2 text-sm px-3 py-2 bg-white/20 hover:bg-white/30 rounded-full backdrop-blur-md"
@@ -116,11 +115,11 @@ export default function Home() {
               {darkMode ? <FaSun /> : <FaMoon />}{" "}
               {darkMode ? "Light Mode" : "Dark Mode"}
             </button>
-          </div>
+          </div> */}
 
           <div className="bg-white/20 backdrop-blur-lg rounded-2xl shadow-2xl p-8 relative z-10">
             <h1 className="text-3xl font-bold mb-6 text-center">
-              BMI Calculator
+              KS BMI Calculator
             </h1>
 
             <div className="mb-4">
@@ -129,7 +128,7 @@ export default function Home() {
                 type="number"
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
-                placeholder="e.g. 70"
+                placeholder="e.g 50"
                 className="w-full p-3 rounded-xl text-gray-900 bg-white focus:outline-none"
               />
             </div>
@@ -220,6 +219,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer></Footer>
       <div className="bottom-ad-code"></div>
     </div>
   );
