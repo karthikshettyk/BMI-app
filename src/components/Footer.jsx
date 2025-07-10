@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -6,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 text-center">
         <p className="text-sm">&copy; {new Date().getFullYear()} KS BMI App. All rights reserved.</p>
         <div className="mt-2 space-x-4">
-          <a href="/privacy" className="hover:underline">Privacy Policy</a>
-          <a href="/terms" className="hover:underline">Terms & Conditions</a>
+          <Link to="/privacy" className="hover:underline">Privacy Policy</Link>
+          <Link to="/terms" className="hover:underline">Terms & Conditions</Link>
         </div>
       </div>
     </footer>

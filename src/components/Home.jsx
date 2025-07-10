@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [weight, setWeight] = useState("");
@@ -101,7 +102,7 @@ export default function Home() {
   return (
     <div>
       <div className="top-ad-code"></div>
-      <Header></Header>
+
       <div
         className={`min-h-screen flex items-center justify-center p-4 transition-all duration-300 ${"bg-gradient-to-br from-indigo-500 to-blue-400 text-white"}`}
       >
@@ -118,10 +119,6 @@ export default function Home() {
           </div> */}
 
           <div className="bg-white/20 backdrop-blur-lg rounded-2xl shadow-2xl p-8 relative z-10">
-            <h1 className="text-3xl font-bold mb-6 text-center">
-              KS BMI Calculator
-            </h1>
-
             <div className="mb-4">
               <label className="block text-sm mb-1">Weight (kg)</label>
               <input
@@ -219,7 +216,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+
       <div className="bottom-ad-code"></div>
     </div>
   );
