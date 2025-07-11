@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
           <p className="mb-4">
             <strong>Effective Date:</strong> July 10,2025 <br />
             <strong>Website Name:</strong> KS BMI App <br/>
-            <strong>Website Url:</strong> [url]
+            <strong>Website Url:</strong> https://bmi-calculator-eb9ad.web.app/
           </p>
 
           <p className="mb-6">

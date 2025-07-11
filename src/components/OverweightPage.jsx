@@ -4,10 +4,10 @@ const OverweightTips = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-blue-50 flex items-center justify-center px-4 py-10">
       <div className="bg-white rounded-2xl shadow-xl p-6 max-w-4xl w-full space-y-6">
-        <h1 className="text-3xl font-bold text-center text-blue-800">Tips for Overweight BMI</h1>
+        <h1 className="text-3xl font-bold text-center text-orange-800">Tips for Overweight BMI Body</h1>
 
         <section>
-          <h2 className="text-2xl font-semibold text-green-700 mb-4">🥗 Food Tips</h2>
+          <h2 className="text-2xl font-semibold text-orange-700 mb-4">🥗 Food Tips</h2>
           <ul className="list-disc space-y-2 pl-6 text-gray-800">
             <li><strong>Portion Control:</strong> Use smaller plates; follow 50% veggies, 25% protein, 25% carbs.</li>
             <li><strong>High-Fiber Foods:</strong> Oats, whole grains, lentils, vegetables, fruits.</li>
@@ -20,7 +20,7 @@ const OverweightTips = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-4">🏃‍♂️ Exercise Tips</h2>
+          <h2 className="text-2xl font-semibold text-orange-700 mb-4">🏃‍♂️ Exercise Tips</h2>
           <ul className="list-disc space-y-2 pl-6 text-gray-800">
             <li><strong>Low-Impact Cardio:</strong> Brisk walking, swimming, or cycling (30–45 mins/day).</li>
             <li><strong>Strength Training:</strong> Bodyweight exercises or resistance bands 3x/week.</li>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+ 
 const ObeseBMITips = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-100 to-rose-200 flex items-center justify-center p-4">
@@ -8,7 +8,7 @@ const ObeseBMITips = () => {
 
         {/* Food Tips */}
         <div>
-          <h2 className="text-2xl font-semibold text-orange-600 mb-4">🥗 Food Tips</h2>
+          <h2 className="text-2xl font-semibold text-red-600 mb-4">🥗 Food Tips</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-800">
             <li>Focus on whole foods: fruits, vegetables, lean proteins, and whole grains.</li>
             <li>Avoid ultra-processed foods and sugary drinks.</li>
@@ -23,7 +23,7 @@ const ObeseBMITips = () => {
 
         {/* Exercise Tips */}
         <div>
-          <h2 className="text-2xl font-semibold text-green-600 mb-4">🏃‍♂️ Exercise Tips</h2>
+          <h2 className="text-2xl font-semibold text-red-600 mb-4">🏃‍♂️ Exercise Tips</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-800">
             <li>Start with low-impact activities like walking or swimming.</li>
             <li>Exercise consistently—30 minutes a day, 5 days a week.</li>

@@ -158,7 +158,7 @@ export default function Home() {
 
           <div className="mt-6 p-4 bg-blue-100 border-l-4 border-blue-500 text-blue-700 rounded-md">
             💡 <strong>Tip:</strong> Knowing your BMI can be your first step
-            toward a healthier life. Make informed choices, every day.
+            toward a healthier life.
           </div>
         </div>
       </div>

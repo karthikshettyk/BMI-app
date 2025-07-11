@@ -52,9 +52,6 @@ const WeightChips = () => {
 
       {selectedChip && (
         <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
-          <h2 className="text-xl font-bold mb-2 text-gray-800">
-            {selectedChip}
-          </h2>
           {chipData[selectedChip].comp}
         </div>
       )}

@@ -5,7 +5,7 @@ const NormalBMITips = () => {
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white py-10 px-6 flex items-center justify-center">
       <div className="max-w-4xl w-full bg-white rounded-2xl shadow-xl p-8 space-y-8">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-green-700">
-          Tips for Normal BMI (Healthy Weight)
+          Tips for Normal BMI Body
         </h1>
 
         {/* Food Tips Section */}

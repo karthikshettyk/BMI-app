@@ -12,7 +12,7 @@ const AboutUs = () => {
 
           <p className="text-lg mb-4">
             Welcome to{" "}
-            <span className="font-semibold text-blue-600">BMI Calculator</span>{" "}
+            <span className="font-semibold text-blue-600">KS BMI App</span>{" "}
             — your simple and accurate tool to calculate your Body Mass Index.
             We help you track your fitness goals by providing insights into your
             weight category and health range.
@@ -43,7 +43,7 @@ const AboutUs = () => {
 
           <div className="mt-10 text-center text-sm text-blue-600 font-semibold">
             <div className="mb-6">App Founder and Web Developer: Karthik Shetty</div>
-            <div> Email: shetty@develoer@gmail.com</div>
+            <div> Email: shetty@developer@gmail.com</div>
           </div>
         </div>
       </div>
