@@ -73,13 +73,13 @@ export default function Home() {
   const getHealthTip = (status) => {
     switch (status) {
       case "Underweight":
-        return "Eat more frequent meals rich in calories, healthy fats, and proteins. Include strength training.";
+        return "underweighttips";
       case "Normal":
-        return "Maintain a balanced diet and regular physical activity to keep your BMI in this healthy range.";
+        return "normalweighttips";
       case "Overweight":
-        return "Consider portion control, daily exercise, and reduced sugar intake to move toward a healthy BMI.";
+        return "overweighttips";
       case "Obese":
-        return "Consult a healthcare provider. Focus on sustainable weight loss through diet and activity.";
+        return "obeseweighttips";
       default:
         return "";
     }
@@ -257,8 +257,8 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 bg-white/30 backdrop-blur-sm p-4 rounded-xl text-sm text-center">
-                  <p className="font-bold mb-2 text-black">Health Tip</p>
-                  <p className="font-bold text-black">{getHealthTip(status)}</p>
+                  <Link to={`/${getHealthTip(status)}`} className="font-bold text-black">Click me to get Food and Exercise Tips</Link>
+
                 </div>
               </>
             )}
